@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 80px;
+    background-color: black;
+}
+h1{
+    color: red;
+}
