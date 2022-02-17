@@ -47,15 +47,16 @@ if(isset($_POST['btncalc'])){
                         Contador:<input type="number" name="txtn2" value="<?=$valor2;?>" > <br>
 
                         <input type="submit" name="btncalc" value ="Calcular" >
-
+                    <!-- <footer>
 						<div id="resultado">
                          <?=$resultado;?>
                         </div>
+                    </footer> -->
                 </form>
-                <div id="wrapper">
-                <div class="scrollbar" id="resultado">
-                <div class="force-overflow"><?$resultado?></div>
+                <div class = "scrollbar">
+                    <?=$resultado;?> 
                 </div>
+                
     </body>
 </body>
 </html>

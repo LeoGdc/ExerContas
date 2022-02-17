@@ -14,7 +14,7 @@
                 <ul class="menu">
                     <a href="Calculos/ExerCalcPHP/calculadora_simples.php"><li>Calculadora</li></a>
                     <a href="Calculos/ExerMedia/media.php"><li>Media</li></a>
-                    <a href="Calculos/ExerParImparPhp/"><li>ParImpar</li></a>
+                    <a href="Calculos/ExerParImpar/ParImpar.php"><li>ParImpar</li></a>
                     <a href="Calculos/ExerTabuadaPhP/Tabuada.php"><li>Tabuada</li></a>
                 </ul>
             </nav>
