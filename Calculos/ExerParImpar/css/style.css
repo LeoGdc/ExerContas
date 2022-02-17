@@ -1,11 +1,11 @@
-.scrollbar{
+.scrollPar{
     background-color: beige;
     width: 400px;
     height: 50vh;
     overflow-y: auto;
 }
-.carro{
-    background-color: beige;
+.scrollimpar{
+    background-color:red;
     width: 400px;
     height: 50vh;
     overflow-y: auto;

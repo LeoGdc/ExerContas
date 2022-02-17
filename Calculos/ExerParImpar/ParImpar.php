@@ -5,7 +5,7 @@
 
     require_once('modulos/config.php');
 
-    $valor1 = (double)0;
+     $valor1 = (double)0;
     $valor2 = (double)0;
     
     $resultadoPares = Array();
@@ -23,16 +23,15 @@
             echo(ERRO_MSG_CARACTER_INVALIDO_TEXTO);
         }else{
             $resultadoPares = selecionarpares($valor1, $valor2);
+           
             $resultadoImpares = selecionarImpares($valor1, $valor2);
+           
         }
     }
 
-     foreach ($resultadoPares as $numeropar) {
-         echo($numeropar);
-     }
-     foreach($resultadoImpares as $numeroImpar){
-         echo($numeroImpar);
-     }
+    
+     
+     
 
     ?>
     <html lang="en">
@@ -54,21 +53,29 @@
                 </div>
     
                 <div id="form">
-                    <form name="frmcalculadora" method="Post" action="Tabuada.php">
+                    <form name="frmcalculadora" method="Post" action="ParImpar.php">
                            Numero Inicial:<input type="number" name="txtn1" value="<?=$valor1;?>" > <br>
                             Numero Final:<input type="number" name="txtn2" value="<?=$valor2;?>" > <br>
     
                             <input type="submit" name="btncalc" value ="Calcular" >
                     </form>
-                <div class = "scrollbar">
-                    <?=$numeropar;?> 
+                <div class = "scrollPar">
+                <?php 
+                    foreach ($resultadoPares as $numeropar) {
+                    echo($numeropar);
+                 }
+                ?>
+     
                 </div>
-                <div class="carro">
-                    <?=$numeroImpar;?>
+                <div class="scrollImpar">
+                    <?php 
+                    foreach($resultadoImpares as $numeroImpar){
+                        echo($numeroImpar);
+                    }
+                    ?>
                 </div>
                     
                     
         </body>
 </body>
 </html>
-    
