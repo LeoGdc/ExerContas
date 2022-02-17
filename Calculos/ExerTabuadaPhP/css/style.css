@@ -1,0 +1,9 @@
+.scrollbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    width: 400px;
+    height: 50vh;
+    overflow: auto;
+}

@@ -7,7 +7,7 @@ require_once('modulos/config.php');
 $valor1 = (double)0;
 $valor2 = (double)0;
 $resultado = (double)0;
-  
+
 if(isset($_POST['btncalc'])){
 
     //receber dados do formulário
@@ -17,10 +17,8 @@ if(isset($_POST['btncalc'])){
     if($_POST['txtn1'] == ""|| $_POST['txtn2'] == ""){
         echo(ERRO_MSG_CAIXA_VAZIA);
     }elseif(!is_numeric($valor1) || !is_numeric($valor2)) {
-        echo(ERRO_MSG_CARACTER_INVALIDO_TEXTO);  
+        echo(ERRO_MSG_CARACTER_INVALIDO_TEXTO);
     }else{
-        $opcao = strtoupper($_POST['rdocalc']);
-
        $resultado = tabuada($valor1, $valor2);
     }
 }
@@ -30,6 +28,7 @@ if(isset($_POST['btncalc'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tabuada</title>
 </head>
 <body>
@@ -43,16 +42,20 @@ if(isset($_POST['btncalc'])){
             </div>
 
             <div id="form">
-                <form name="frmcalculadora" method="post" action="calculadora_simples.php">
-						Valor 1:<input type="text" name="txtn1" value="<?=$valor1;?>" > <br>
-                        Valor 2:<input type="text" name="txtn2" value="<?=$valor2;?>" > <br>
-                        
+                <form name="frmcalculadora" method="Post" action="Tabuada.php">
+						Multiplicando:<input type="number" name="txtn1" value="<?=$valor1;?>" > <br>
+                        Contador:<input type="number" name="txtn2" value="<?=$valor2;?>" > <br>
+
                         <input type="submit" name="btncalc" value ="Calcular" >
 
 						<div id="resultado">
                          <?=$resultado;?>
-                </form>         
-			</div>				
+                        </div>
+                </form>
+                <div id="wrapper">
+                <div class="scrollbar" id="resultado">
+                <div class="force-overflow"><?$resultado?></div>
+                </div>
     </body>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 /*********************************
  * Objetivo: Arquivo responsavel por reunir e padronizar todas as variaveis e constantes
- *          que serão utilizadas em todo o projeto 
+ *          que serão utilizadas em todo o projeto
  * autor: Leonardo
  * Data: 10/02/2022
  * versão : 1.0
