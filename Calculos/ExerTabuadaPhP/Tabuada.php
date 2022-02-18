@@ -29,6 +29,7 @@ if(isset($_POST['btncalc'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Tabuada</title>
 </head>
 <body>
@@ -36,20 +37,22 @@ if(isset($_POST['btncalc'])){
 
     </header>
     <body>
-        
+        <main>
+
     <nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn">
-					<i class="fas fa-bars"></i>
-				</label>
-				<label class="logo">Calculando</label>
-				<ul>
-					<li><a class="active" href="">inicio</a></li>
-					<li><a href="Calculos/calculadora_simples.php">Calculadora</a></li>
-					<li><a href="Calculos/media.php">Media</a></li>
-					<li><a href="Calculos/ParImpar.php">ParImpar</a></li>
-				</ul>
-			</nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo"></label>
+                <ul>
+                    <li><a href="/index.php">inicio</a></li>
+                    <li><a href="../ExerCalcPHP/calculadora_simples.php">Calculadora</a></li>
+                    <li><a href="../ExerMedia/media.php">Media</a></li>
+                    <li><a class="active" href="">Tabuada</a></li>
+                    <li><a href="../ExerParImpar/ParImpar.php">Par e Impar</a></li>
+                </ul>
+        </nav>
           <div id="conteudo">
             <div id="titulo">
                 Tabuada
@@ -70,7 +73,7 @@ if(isset($_POST['btncalc'])){
                 <div class = "scrollbar">
                     <?=$resultado;?>
                 </div>
-
-    </body>
+</main>
+    
 </body>
 </html>

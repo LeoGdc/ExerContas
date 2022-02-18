@@ -58,27 +58,29 @@
 	}
 
 
-	
+
 ?>
 <html>
     <head>
         <title>Calculadora - Simples</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
 	<body>
 	<nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn">
-					<i class="fas fa-bars"></i>
-				</label>
-				<label class="logo"></label>
-				<ul>
-					<li><a class="active" href="">inicio</a></li>
-					<li><a href="Calculos/ParImpar.php">ParÍmpar</a></li>
-					<li><a href="Calculos/media.php">Media</a></li>
-					<li><a href="Calculos/Tabuada.php">Tabuada</a></li>
-				</ul>
-			</nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo"></label>
+                <ul>
+                    <li><a href="/index.php">inicio</a></li>
+                    <li><a class="active" href="">Calculadora</a></li>
+                    <li><a href="../ExerMedia/media.php">Media</a></li>
+                    <li><a href="../ExerTabuadaPhP/Tabuada.php">Tabuada</a></li>
+                    <li><a href="../ExerParImpar/ParImpar.php">Par e Impar</a></li>
+                </ul>
+        </nav>
 
 
         <div id="conteudo">

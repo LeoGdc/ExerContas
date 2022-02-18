@@ -1,3 +1,10 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
 .scrollbar{
     background-color: #cccccc;
     width: 350px;
@@ -33,6 +40,8 @@ input{
     text-align: center;
 
 }
+
+
 #titulo{
     width: inherit;
     height: 80px;
@@ -47,16 +56,27 @@ input{
 };
 
 nav{
-	background-color: #b2dbd6;
+	background-color: white;
 	height: 80px;
 	width: 100%;
-}nav ul li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+label.logo {
+	width: 230px;
+	height: 50px;
+	color: white;
+	font-size: 35px;
+}
+
+nav ul li {
 	display: inline-block;
 	line-height: 80px;
 	margin: 0 5px;
 }
 nav ul li a {
-	color: white;
+	color: black;
 	font-size: 17px;
 	padding: 7px 13px;
 	border-radius: 3px;
@@ -66,6 +86,7 @@ a.active, a:hover {
 	background: whitesmoke;
 	transition: .5s;
 }
+
 .checkbtn {
     width: 10px;
     height: 10px;
@@ -73,11 +94,13 @@ a.active, a:hover {
     align-content: flex-start;
     margin-left: 30px;
 	font-size: 30px;
-	color: white;
+	color: black;
 	line-height: 80px;
 	margin-right: 40px;
 	cursor: pointer;
 	display: none;
+	margin-top: 20px;
+
 }
 #check {
 	display: none;
@@ -92,7 +115,7 @@ a.active, a:hover {
 		position: fixed;
 		width: 15%;
 		height: 100vh;
-		background-color: #97bdb8;
+		background-color: white;
 		top: 80px;
 		left: -100%;
 		text-align: center;
@@ -108,9 +131,13 @@ a.active, a:hover {
 	}
 	a:hover, a.active {
 		background: none;
-		color: wheat;
+		color: red;
 	}
 	#check:checked ~ ul {
 		left: 0;
-	
+
 }
+
+
+
+

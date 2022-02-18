@@ -39,6 +39,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <title>Pares e Impares
         </title>
     </head>
@@ -48,19 +49,20 @@
        </header>
         <body>
         <nav>
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn">
-					<i class="fas fa-bars"></i>
-				</label>
-				<label class="logo">Calculando</label>
-				<ul>
-					<li><a class="active" href="">inicio</a></li>
-					<li><a href="./pages/calculadora.php">Calculadora</a></li>
-					<li><a href="./pages/media.php">Media</a></li>
-					<li><a href="./pages/tabuada.php">Tabuada</a></li>
-				</ul>
-			</nav>
-	
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo"></label>
+                <ul>
+                    <li><a href="/index.php">inicio</a></li>
+                    <li><a href="../ExerCalcPHP/calculadora_simples.php">Calculadora</a></li>
+                    <li><a href="../ExerMedia/media.php">Media</a></li>
+                    <li><a href="../ExerTabuadaPhP/Tabuada.php">Tabuada</a></li>
+                    <li><a class="active" href="">Par e Impar</a></li>
+                </ul>
+        </nav>
+
               <div id="conteudo">
                 <div id="titulo">
                     Pares e Impares
