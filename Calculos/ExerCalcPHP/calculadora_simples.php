@@ -58,7 +58,7 @@
 	}
 
 
-	echo(gettype($valor1))
+	
 ?>
 <html>
     <head>
@@ -71,7 +71,7 @@
 				<label for="check" class="checkbtn">
 					<i class="fas fa-bars"></i>
 				</label>
-				<label class="logo">Calculando</label>
+				<label class="logo"></label>
 				<ul>
 					<li><a class="active" href="">inicio</a></li>
 					<li><a href="Calculos/ParImpar.php">ParÍmpar</a></li>
