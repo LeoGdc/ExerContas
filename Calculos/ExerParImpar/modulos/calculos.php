@@ -6,22 +6,16 @@ function selecionarpares($numeroInicial, $numeroFinal){
     $contadorArray = (int) 0;
     $pares = array();
 
-  
-
     for($i = $numeroInicial; $i <=$numeroFinal; $i++){
 
-        
-
         if($i % 2 == 0){
-            $pares[$contadorArray] = $i;
+            $pares[$contadorArray] = $i ;
             $contadorArray++;
-            
+
         }
-        
+
     }
-    return $pares;
-    
-  
+    return $pares ;
 
 }
 
@@ -34,11 +28,12 @@ function selecionarImpares($numeroInicial, $numeroFinal){
     for($i = $numeroInicial; $i <=$numeroFinal; $i++){
 
         if($i % 2 == 1){
-            $impares[$contadorArray] = $i;
+            $impares[$contadorArray] = $i ;
             $contadorArray++;
         }
-        
+
     }
     return $impares;
+
 }
 ?>

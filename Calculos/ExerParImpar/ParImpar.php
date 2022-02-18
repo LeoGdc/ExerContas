@@ -7,7 +7,7 @@
 
      $valor1 = (double)0;
     $valor2 = (double)0;
-    
+
     $resultadoPares = Array();
     $resultadoImpares = Array();
 
@@ -23,15 +23,15 @@
             echo(ERRO_MSG_CARACTER_INVALIDO_TEXTO);
         }else{
             $resultadoPares = selecionarpares($valor1, $valor2);
-           
+
             $resultadoImpares = selecionarImpares($valor1, $valor2);
-           
+
         }
     }
 
-    
-     
-     
+
+
+
 
     ?>
     <html lang="en">
@@ -43,39 +43,58 @@
         </title>
     </head>
     <body>
-        <header>
-    
-        </header>
+       <header>
+
+       </header>
         <body>
+        <nav>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<label class="logo">Calculando</label>
+				<ul>
+					<li><a class="active" href="">inicio</a></li>
+					<li><a href="./pages/calculadora.php">Calculadora</a></li>
+					<li><a href="./pages/media.php">Media</a></li>
+					<li><a href="./pages/tabuada.php">Tabuada</a></li>
+				</ul>
+			</nav>
+	
               <div id="conteudo">
                 <div id="titulo">
                     Pares e Impares
                 </div>
-    
+
                 <div id="form">
                     <form name="frmcalculadora" method="Post" action="ParImpar.php">
                            Numero Inicial:<input type="number" name="txtn1" value="<?=$valor1;?>" > <br>
                             Numero Final:<input type="number" name="txtn2" value="<?=$valor2;?>" > <br>
-    
+
                             <input type="submit" name="btncalc" value ="Calcular" >
                     </form>
-                <div class = "scrollPar">
-                <?php 
-                    foreach ($resultadoPares as $numeropar) {
-                    echo($numeropar);
-                 }
-                ?>
-     
+                <div class = scrolls>
+                    <h2>Par</h2>
+                    <div class = "scrollPar">
+                        <?php
+                            foreach ($resultadoPares as $numeropar) {
+                            echo ($numeropar);
+                            echo nl2br("\n");
+                            }
+                        ?>
+
+                    </div>
+                    <h2>Impar</h2>
+                    <div class="scrollImpar">
+                        <?php
+                            foreach($resultadoImpares as $numeroImpar){
+                            echo ($numeroImpar);
+                            echo nl2br("\n");
+                        }
+                        ?>
                 </div>
-                <div class="scrollImpar">
-                    <?php 
-                    foreach($resultadoImpares as $numeroImpar){
-                        echo($numeroImpar);
-                    }
-                    ?>
-                </div>
-                    
-                    
+            </div>
+
         </body>
 </body>
 </html>

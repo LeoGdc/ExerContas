@@ -8,16 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Calculadora</h1>
+     <div>
+         <a id ="dentro">
+             <img src="img/Calculadoras.png" alt="">
+         </a>
+     </div>
         <main>
             <nav>
                 <ul class="menu">
-                    <a href="Calculos/ExerCalcPHP/calculadora_simples.php"><li>Calculadora</li></a>
-                    <a href="Calculos/ExerMedia/media.php"><li>Media</li></a>
-                    <a href="Calculos/ExerParImpar/ParImpar.php"><li>ParImpar</li></a>
-                    <a href="Calculos/ExerTabuadaPhP/Tabuada.php"><li>Tabuada</li></a>
+                    <a href="Calculos/ExerCalcPHP/calculadora_simples.php">
+                        <img src="img/Calculadora.png" alt="">
+                    </a>
+                    <a href="Calculos/ExerMedia/media.php">
+                        <img src="img/Média.png" alt="">
+                    </a>
+                    <a href="Calculos/ExerParImpar/ParImpar.php">
+                        <img src="img/Par Ímpar.png" alt="">
+                    </a>
+                    <a href="Calculos/ExerTabuadaPhP/Tabuada.php">
+                        <img src="img/Tabuada.png" alt="">
+                    </a>
                 </ul>
             </nav>
+		</div>
         </main>
     </header>
 </body>

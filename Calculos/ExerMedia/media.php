@@ -60,6 +60,20 @@
         <meta charset="utf-8">
     </head>
 	<body>
+    <nav>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<label class="logo">Calculando</label>
+				<ul>
+					<li><a class="active" href="">inicio</a></li>
+					<li><a href="./pages/calculadora.php">Calculadora</a></li>
+					<li><a href="./pages/media.php">Media</a></li>
+					<li><a href="./pages/tabuada.php">Tabuada</a></li>
+				</ul>
+			</nav>
+	
         
         <div id="conteudo">
             <header id="titulo">

@@ -5,7 +5,7 @@
     margin-right: auto;
     border: solid 1px red;
     text-align: center;
-   
+
 }
 
 #titulo{
@@ -36,13 +36,14 @@ input{
 #resultado{
     width: 200px;
     height: 110px;
-    background-color: red;
+    background-color: #cccccc;
     box-sizing: border-box;
     padding-top: 2px;
     font-family: cursive;
     font-size: 20px;
     font-weight: bold;
     float: left;
+    border: solid 1px black;
 }
 
 #container_opcoes{
@@ -50,5 +51,5 @@ input{
     height: 50px;
     float: left;
     text-align: left;
-    
+
 }

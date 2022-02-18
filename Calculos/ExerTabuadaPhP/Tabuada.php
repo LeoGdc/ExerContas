@@ -36,6 +36,20 @@ if(isset($_POST['btncalc'])){
 
     </header>
     <body>
+        
+    <nav>
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<label class="logo">Calculando</label>
+				<ul>
+					<li><a class="active" href="">inicio</a></li>
+					<li><a href="Calculos/calculadora_simples.php">Calculadora</a></li>
+					<li><a href="Calculos/media.php">Media</a></li>
+					<li><a href="Calculos/ParImpar.php">ParImpar</a></li>
+				</ul>
+			</nav>
           <div id="conteudo">
             <div id="titulo">
                 Tabuada
@@ -54,9 +68,9 @@ if(isset($_POST['btncalc'])){
                     </footer> -->
                 </form>
                 <div class = "scrollbar">
-                    <?=$resultado;?> 
+                    <?=$resultado;?>
                 </div>
-                
+
     </body>
 </body>
 </html>
